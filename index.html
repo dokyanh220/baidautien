@@ -41,21 +41,21 @@
         <!-- The band -->
         <div class="content-section">
                 <h2 class="heading-section">The Band</h2>
-                <p class="slogan-section">We love music</p>
-                <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h2 class="slogan-section">We love music</h2>
+                <h2 class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
                 <div class="member-list">
                     <div class="member-items">
-                        <p class="member-name">Name</p>
+                        <h2 class="member-name">Name</h2>
                         <img src="assets/img/bandmember.jpg" alt="Name">
                     </div>
 
                     <div class="member-items">
-                        <p class="member-name">Name</p>
+                        <h2 class="member-name">Name</h2>
                         <img src="assets/img/bandmember.jpg" alt="Name">
                     </div>
 
                     <div class="member-items">
-                        <p class="member-name">Name</p>
+                        <h2 class="member-name">Name</h2>
                         <img src="assets/img/bandmember.jpg" alt="Name">
                     </div>
                     <div class="clear"></div>
@@ -67,7 +67,7 @@
         <div class="tour-section">
                 <div class="content-section">
                     <h2 class="heading-section">Tour Dates</h2>
-                    <p class="slogan-section">Remember to book your tickets!</p>
+                    <h2 class="slogan-section">Remember to book your tickets!</h2>
                     <!--tickets-list-->
                    <div class="tickets-list">
                        <ul>
@@ -85,8 +85,8 @@
                         <img src="./assets/img/newyork.jpg" alt="New York"/>
                         <div class="place-body">
                             <h3 class="place-heading">New York</h3>
-                            <p class="place-time">Fri 27 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <h2 class="place-time">Fri 27 Nov 2016</h2>
+                            <h2 class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h2>
                             <button class="buytickets">Buy Tickets</button>
                         </div>
                     </div>
@@ -96,8 +96,8 @@
                             <img src="./assets/img/paris.jpg" alt="Paris"/>
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
-                                <p class="place-time">Sat 28 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <h2 class="place-time">Sat 28 Nov 2016</h2>
+                                <h2 class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h2>
                                 <button class="buytickets">Buy Tickets</button>
                             </div>
                         </div>
@@ -107,8 +107,8 @@
                             <img src="./assets/img/sanfran.jpg" alt="San Francisco"/>
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
-                                <p class="place-time">Fri 27 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <h2 class="place-time">Fri 27 Nov 2016</h2>
+                                <h2 class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h2>
                                 <button class="buytickets">Buy Tickets</button>
                             </div>
                         </div>
@@ -124,36 +124,42 @@
          <div class="contact-section">
              <div class="content-section">
                  <h2 class="heading-section">Contact</h2>
-                 <p class="slogan-section">Fan? Drop a note!</p>
+                 <h2 class="slogan-section">Fan? Drop a note!</h2>
              </div>  
          </div>
         </div>
     </div>
     <!-- modal -->
      <div class="modal">
-        <div class="container">
-            <!-- close modal  -->
-            <div class="closemodal">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
+        <div class="modal-container">
             <!-- header modal -->
-            <div class="header">
+            <div class="header-modal">
+                <!-- close modal  -->
+                <div class="closemodal">
+                    <!-- i -->
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
                 <i class="fa-solid fa-suitcase"></i>
-                Tickets
+                <h2>Tickets</h2>
             </div>
             <!-- body modal -->
-            <div class="body">
-                <label for="" class="label-modal">
+            <div class="body-modal">
+                <label for="num" class="label-modal">
                     <i class="fa-solid fa-cart-shopping"></i>
                     Tickets, $15 per person
                 </label>
-                <input type="text" class="modal-input" placeholder="How many?">
-                <label for="" class="label-modal">
+                <input id="num" type="text" class="modal-input" placeholder="How many?">
+                <label for="email" class="label-modal">
                     <i class="fa-solid fa-user"></i>
                     Send To
                 </label>
-                <input type="email" class="modal-input" placeholder="Enter Email">
+                <input id="email" class="modal-input" placeholder="Enter Email">
+                <button id="pay">Pay<i class="fa-solid fa-check"></i></button>
             </div>
+            <!-- footer modal -->
+            <div class="footer-modal">
+                <footer class="modal-footer"></footer>
+                <h2 class="modal-help">Need <a href="">help?</a></h2>
         </div>
      </div>
 </body>
