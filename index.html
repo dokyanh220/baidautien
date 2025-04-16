@@ -28,6 +28,9 @@
 
             <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
+        <!-- header -->
+
+
         <!-- slider -->
         <div id="slider">
             <div class="text-content">
@@ -36,25 +39,29 @@
             </div>    
         <!-- slider -->
         </div>
+        <!-- slider -->
+
+
         <!-- content -->
-        <div id="content">
+    <div id="content">
+
         <!-- The band -->
         <div class="content-section">
                 <p class="heading-section">The Band</p>
                 <p class="slogan-section">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="member-list">
-                    <div class="member-items">
+                <div class="member-list row">
+                    <div class="member-items col col-3">
                         <p class="member-name">Name</p>
                         <img src="assets/img/bandmember.jpg" alt="Name">
                     </div>
 
-                    <div class="member-items">
+                    <div class="member-items col col-3">
                         <p class="member-name">Name</p>
                         <img src="assets/img/bandmember.jpg" alt="Name">
                     </div>
 
-                    <div class="member-items">
+                    <div class="member-items col col-3">
                         <p class="member-name">Name</p>
                         <img src="assets/img/bandmember.jpg" alt="Name">
                     </div>
@@ -62,6 +69,7 @@
                 </div>
         </div>
         <!-- The band -->
+
 
         <!-- Tour -->
         <div class="tour-section">
@@ -120,15 +128,45 @@
     </div>
         </div>
         <!-- tour -->
+
+
         <!-- contact -->
          <div class="contact-section">
              <div class="content-section">
                  <p class="heading-section">Contact</p>
                  <p class="slogan-section">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="fa-solid fa-location-dot"></i> Chicago, US</p>
+                        <p><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
+                        <p><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
+                    </div>
+                    
+                    <div class="col col-half contact-form ">
+                        <form action="">
+                            <div class="row ">
+                                <div class="col col-half ">
+                                    <input type="text" placeholder="Name" class="contact-input">
+                                </div>
+                                
+                                <div class="col col-half ">     
+                                    <input type="email" placeholder="Email" class="contact-input">
+                                </div>
+                                
+                            </div>
+        
+                            <div class="row ">
+                                    <input type="text" placeholder="Message" class="contact-input">
+                            </div>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
              </div>  
-         </div>
         </div>
-    </div>
+        <!-- contact -->
+
+
     <!-- modal -->
      <div class="modal">
         <div class="modal-container js-modal-container">
@@ -162,6 +200,12 @@
                 <p class="modal-help">Need <a href="">help?</a></p>
         </div>
      </div>
+    </div>
+    <!-- modal -->
+
+    </div>
+    <!-- content -->
+
      <script src="./assets/js/style.js"></script>
 </body>
 </html>
