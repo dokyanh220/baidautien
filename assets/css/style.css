@@ -29,10 +29,16 @@ html{
 
 .col{
     float: left;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .col-half{
     width: 50%; 
+}
+
+.col-full{
+    width: 100%;
 }
 
 .col-3{
@@ -438,7 +444,7 @@ html{
     margin-top: 48px;
 }
 
-.conntact-info{
+.contact-info{
     font-size: 18px;
     line-height: 1.6;
 }
@@ -457,8 +463,30 @@ html{
     font-size: 15px;
 }
 
-.contact-input{
+.contact-form .form-control{
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    width: 100%;
+}
+
+.contact-form>form>input{
+    padding: 8px 16px;
+    margin: 16px 0;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    float: right;
+}
+
+.contact-form>form>input:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.map{
+    height: auto;
+    filter: grayscale(50%);
 }

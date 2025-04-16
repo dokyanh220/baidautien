@@ -65,14 +65,14 @@
                         <p class="member-name">Name</p>
                         <img src="assets/img/bandmember.jpg" alt="Name">
                     </div>
-                    <div class="clear"></div>
+                    
                 </div>
         </div>
         <!-- The band -->
 
 
         <!-- Tour -->
-        <div class="tour-section">
+        <div class="tour-section row">
                 <div class="content-section">
                     <p class="heading-section">Tour Dates</p>
                     <p class="slogan-section">Remember to book your tickets!</p>
@@ -87,45 +87,49 @@
                        </ul>
                    </div>
                      <!--tickets-list-->
-                   <!-- New York -->
-                   <div class="place-list">
-                    <div class="place-item">
-                        <img src="./assets/img/newyork.jpg" alt="New York"/>
-                        <div class="place-body">
-                            <h3 class="place-heading">New York</h3>
-                            <p class="place-time">Fri 27 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="buytickets js-buytickets">Buy Tickets</button>
-                        </div>
-                    </div>
-                    <!--Paris-->
-                    <div class="place-list">
-                        <div class="place-item">
-                            <img src="./assets/img/paris.jpg" alt="Paris"/>
-                            <div class="place-body">
-                                <h3 class="place-heading">Paris</h3>
-                                <p class="place-time">Sat 28 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buytickets js-buytickets">Buy Tickets</button>
+
+                     <!-- 3 tag place-list -->
+                      <div class="places-list" style="margin: 32px -8px 0">
+                          <!-- New York -->
+                          <div class="place-list">
+                           <div class="place-item">
+                               <img src="./assets/img/newyork.jpg" alt="New York"/>
+                               <div class="place-body">
+                                   <h3 class="place-heading">New York</h3>
+                                   <p class="place-time">Fri 27 Nov 2016</p>
+                                   <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                   <button class="buytickets js-buytickets">Buy Tickets</button>
+                               </div>
+                           </div>
+                           </div>
+                           <!--Paris-->
+                           <div class="place-list">
+                               <div class="place-item">
+                                   <img src="./assets/img/paris.jpg" alt="Paris"/>
+                                   <div class="place-body">
+                                       <h3 class="place-heading">Paris</h3>
+                                       <p class="place-time">Sat 28 Nov 2016</p>
+                                       <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                       <button class="buytickets js-buytickets">Buy Tickets</button>
+                                   </div>
+                               </div>
                             </div>
-                        </div>
-                    <!--Sanfran-->
-                    <div class="place-list">
-                        <div class="place-item">
-                            <img src="./assets/img/sanfran.jpg" alt="San Francisco"/>
-                            <div class="place-body">
-                                <h3 class="place-heading">San Francisco</h3>
-                                <p class="place-time">Fri 27 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buytickets js-buytickets">Buy Tickets</button>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                   </div>
+                           <!--Sanfran-->
+                           <div class="place-list">
+                               <div class="place-item">
+                                   <img src="./assets/img/sanfran.jpg" alt="San Francisco"/>
+                                   <div class="place-body">
+                                       <h3 class="place-heading">San Francisco</h3>
+                                       <p class="place-time">Fri 27 Nov 2016</p>
+                                       <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                       <button class="buytickets js-buytickets">Buy Tickets</button>
+                                   </div>
+                               </div>
+                          </div>
+                      </div>
+                        <!-- 3 tag place-list -->
                 </div>
                   
-        </div>
-    </div>
         </div>
         <!-- tour -->
 
@@ -144,20 +148,26 @@
                     
                     <div class="col col-half contact-form ">
                         <form action="">
-                            <div class="row ">
+                            <div class="row " style="margin-bottom: 8px;">
                                 <div class="col col-half ">
-                                    <input type="text" placeholder="Name" class="contact-input">
+                                    <input type="text" placeholder="Name" class="form-control">
                                 </div>
                                 
                                 <div class="col col-half ">     
-                                    <input type="email" placeholder="Email" class="contact-input">
+                                    <input type="email" placeholder="Email" class="form-control">
                                 </div>
+                                
                                 
                             </div>
         
                             <div class="row ">
-                                    <input type="text" placeholder="Message" class="contact-input">
+    
+                                <div class="col col-full ">
+                                    <input type="text" placeholder="Message" class="form-control">
+                                </div>
+    
                             </div>
+    
                             <input type="submit" value="Send">
                         </form>
                     </div>
@@ -166,9 +176,18 @@
         </div>
         <!-- contact -->
 
+        <!-- map -->
+        <div class="map">
+            <img src="./assets/img/map.jpg" alt="map" style="width: 100%">
+        </div>
+        <!-- map -->
+
+    <!-- đóng div của content -->
+    </div>
+
 
     <!-- modal -->
-     <div class="modal">
+    <div class="modal">
         <div class="modal-container js-modal-container">
             <!-- header modal -->
             <div class="header-modal">
@@ -199,12 +218,12 @@
                 <footer class="modal-footer"></footer>
                 <p class="modal-help">Need <a href="">help?</a></p>
         </div>
-     </div>
+    </div>
     </div>
     <!-- modal -->
 
-    </div>
-    <!-- content -->
+    <!-- đóng div của main -->
+    </div> 
 
      <script src="./assets/js/style.js"></script>
 </body>
