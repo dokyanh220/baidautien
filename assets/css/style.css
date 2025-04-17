@@ -77,8 +77,7 @@ html{
 
 #nav li a{
     line-height: 45px;
-    padding: 0 24px;
-    font-size: 15px;
+    padding: 0px 24px;
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -489,4 +488,34 @@ html{
 .map{
     height: auto;
     filter: grayscale(50%);
+}
+
+.footer{
+    padding: 64px 16px
+}
+
+.footer-body{
+    text-align: center;
+}
+
+.footer-body i{
+    margin: 0 2px;
+    font-size: 24px;
+    color: grey;
+}
+
+.footer-body i:hover{
+    color: #ccc;
+    cursor: pointer;
+}
+
+.footer-body p{
+    margin-top: 15px;
+    font-size: 15px;
+    color: #757575;
+}
+
+.footer-body p>a{
+    color: #757575;
+    cursor: pointer;
 }
