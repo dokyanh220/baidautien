@@ -24,6 +24,6 @@ closeModal.addEventListener('click', hideshowbuytickets)
 // thêm sự kiện click cho modal để ẩn modal khi click ra ngoài
 modal.addEventListener('click', hideshowbuytickets)
 
-modalContent.addEventListener('click', function(event) {
+modalcontainer.addEventListener('click', function(event) {
     event.stopPropagation(); // ngăn chặn sự kiện click từ modalContent truyền lên modal(sự kiện nổi bọt)
 })
