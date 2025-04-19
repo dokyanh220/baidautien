@@ -1,0 +1,98 @@
+/* pc */
+@media (min-width: 1024px) {
+    #header .mobileMenu{
+        display: none;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #header .mobileMenu{
+        display: none;
+    }
+
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    /* chung */
+    .col-half {
+        width: 100%;
+    }
+    
+    .col {
+        float: left;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* header */
+    #header{
+        overflow: hidden;
+    }
+
+    #nav>li{
+        display: block;
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    #header .mobileMenu{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #header .searchbtn{
+        display: none;
+    }
+
+    #slider > .text-content{
+        display: none;
+    }
+
+    /* the band */
+    #content .member-items{
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    
+    #content #band img{
+        height: 230px !important;
+        width: 230px;
+    }
+
+    /* tour-section */
+    .tour-section {
+        background-color: #000;
+        color: #fff;
+        padding: 30px 8px;
+    }
+
+    .place-item {
+        padding: 0 8px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    /* contact-section */
+    .contact-info {
+        font-size: 18px;
+        line-height: 1.6;
+        width: 100%;
+    }
+
+    .contact-form .form-control:first-child {
+        font-size: 15px;
+        width: 100%;
+        margin-top: 12px;
+    }
+}
