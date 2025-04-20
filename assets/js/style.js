@@ -49,8 +49,16 @@ menu.onclick = function() {
 // khi click vào menu thì sẽ đóng menu
 var menuItems = document.querySelectorAll('#nav li a[href*="#"]');{
     for (var i = 0; i < menuItems.length; i++) {
-        menuItems[i].onclick = function() {
-            header.style.height = null; // đóng menu khi click vào menu
+        var menuItem = menuItems[i];
+        menuItem.onclick = function(event) {       
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav'); 
+            // kiểm tra nếu menuItem có thẻ cha là subnav thì sẽ thêm sự kiện click vào menuItem
+            if (isParentMenu) {
+                event.preventDefault(); // ngăn chặn sự kiện click mặc định
+            } 
+            else {
+                header.style.height = null; // đóng menu khi click vào menu
+            }
         }
     }
 }
