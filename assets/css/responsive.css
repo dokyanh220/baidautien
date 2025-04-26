@@ -68,7 +68,11 @@
         display: none;
     }
 
-    #slider > .text-content{
+    #slider{
+        width: 100%;
+        height: 200px;
+    }
+    #slider .slide .text-content{
         display: none;
     }
 

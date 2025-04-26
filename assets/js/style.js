@@ -62,3 +62,27 @@ var menuItems = document.querySelectorAll('#nav li a[href*="#"]');{
         }
     }
 }
+
+
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length; // Quay lại slide đầu tiên nếu hết
+    showSlide(currentIndex);
+}
+
+// Hiển thị slide đầu tiên
+showSlide(currentIndex);
+
+// Tự động chuyển slide sau mỗi 4 giây
+setInterval(nextSlide, 4000);
